@@ -12,8 +12,6 @@ import WebNavbar from '@/components/WebNavbar.vue';
 import WebFooter from '@/components/WebFooter.vue';
 import { ref } from 'vue';
 
-console.log('weblayout');
-
 const slide = ref('first');
 </script>
 

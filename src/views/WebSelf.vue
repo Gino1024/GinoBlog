@@ -11,6 +11,7 @@
   </WebTabs>
 </template>
 <script setup lang='ts'>
+import AboutMe from '@/components/AboutMe.vue';
 import WebTimeline from '@/components/WebTimeline.vue';
 import WebTabs from '@/components/WebTabs.vue';
 import { useRoute, useRouter } from 'vue-router';

@@ -1,7 +1,7 @@
 <template>
-  <div class="row justify-center">
+  <div class="row justify-center" style=''>
 
-    <div class="column items-center" style='max-width:45%'>
+    <div class="column items-center" style='margin:auto'>
       <q-avatar size="250px" >
         <img alt='profilePhoto' src="../assets/images/mimi.jpg">
       </q-avatar>
@@ -11,11 +11,11 @@
         necessitatibus tenetur eius non perspiciatis,
         </div>
         <div class="q-mt-lg">
-          <q-btn label='Know More'></q-btn>
+          <q-btn label='Know More' @click='click'></q-btn>
         </div>
     </div>
 
-    <div class="column items-center" style='max-width:45%'>
+    <div class="column items-center" style='margin:auto'>
 
       <div class="q-mt-md" style='max-width:50%'>
       <WebTimeline :showDetail=showDetail></WebTimeline>
@@ -26,6 +26,9 @@
 <script setup leng='ts'>
 import WebTimeline from '@/components/WebTimeline.vue';
 import { ref, defineProps } from 'vue';
+import { useRouter, useRoute } from 'vue-router';
+
+const router = useRouter();
 
 const props = defineProps({
   showDetail: {
@@ -33,7 +36,14 @@ const props = defineProps({
   },
 });
 
-console.log(props.showDetail);
-
 const showDetail = ref(props.showDetail ?? true);
+
+const click = () => {
+  router.push(
+    {
+      name: 'self',
+      params: { tab: 'resume' },
+    },
+  );
+};
 </script>

@@ -67,6 +67,5 @@ const props = defineProps({
   },
 });
 
-console.log('webTimeline', props.showDetail);
 const showDetail = ref(props.showDetail ?? true);
 </script>
