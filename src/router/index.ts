@@ -16,7 +16,9 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: '/self',
+        name: 'self',
         component: () => import('../views/WebSelf.vue'),
+        props: true,
       },
     ],
   },

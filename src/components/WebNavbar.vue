@@ -10,8 +10,10 @@
           icon="menu"
           class= 'text-grey-8'
         />
-        <q-toolbar-title class="text-grey-8">
-          Web App
+        <q-toolbar-title>
+          <q-item>
+          <router-link to="`/home`" class="text-grey-8 link">Web App</router-link>
+          </q-item>
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
@@ -48,3 +50,9 @@ import { ref } from 'vue';
 
 const leftDrawerOpen = ref(false);
 </script>
+
+<style lang='scss'>
+  .link{
+    text-decoration: none;
+  }
+</style>

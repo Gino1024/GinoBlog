@@ -1,6 +1,6 @@
 <template>
-<div>
-  <div class="q-pa-md row justify-around wrap">
+<div class="cards-wrap">
+  <div class="q-pa-md row justify-start wrap ">
     <q-card class="my-card q-ml-md q-mb-md"  >
       <q-img
         src="../assets/images/05.jpg"
@@ -56,7 +56,14 @@ const expanded = ref(false);
 </script>
 <style lang='scss'>
   .my-card{
-    max-width: 33%;
+    width: 30%;
+    max-width: 400px;
+    min-width: 350px;
+    margin: 25px auto ;
+  }
+  .cards-wrap{
+    box-sizing: border-box;
     margin: auto;
+    width: 90%;
   }
 </style>

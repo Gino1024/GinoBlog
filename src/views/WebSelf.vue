@@ -1,6 +1,21 @@
 <template>
-  myself
+  <WebTabs :tab=tab>
+    <template #resume>
+      <WebTimeline></WebTimeline>
+    </template>
+    <template #skill>
+      <div>
+        <img src="../assets/images/mySkill.png" alt='skill' style='width:100%;'/>
+      </div>
+    </template>
+  </WebTabs>
 </template>
 <script setup lang='ts'>
-console.log('self');
+import WebTimeline from '@/components/WebTimeline.vue';
+import WebTabs from '@/components/WebTabs.vue';
+import { useRoute, useRouter } from 'vue-router';
+
+const route = useRoute();
+const { tab } = route.params;
+
 </script>
