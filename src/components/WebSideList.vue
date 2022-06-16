@@ -1,11 +1,11 @@
 <template>
   <div class="q-pa-md row items-start q-gutter-md">
-      <q-card class="my-card" style='border-radius: 16px;'>
+      <q-card class="my-card" style='border-radius: 16px; min-height:300px; min-width:160px;'>
         <q-card-section>
           <div class="text-h6 text-center">{{props.skillDetailInfo.label}}</div>
         </q-card-section>
 
-        <q-separator class="bg-teal-2"></q-separator>
+        <q-separator ></q-separator>
 
         <q-card-actions vertical>
           <q-btn flat  v-for='(item,index) in props.skillDetailInfo.children'
