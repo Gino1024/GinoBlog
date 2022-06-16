@@ -14,7 +14,7 @@
       </q-tabs>
       <q-tab-panels v-model="tab" animated>
         <q-tab-panel name="resume">
-          <slot name='resume'></slot>
+          <slot name='resume' :showDetail=showDetail ></slot>
         </q-tab-panel>
         <q-tab-panel name="skill">
           <slot name='skill'></slot>

@@ -1,7 +1,7 @@
 <template>
   <WebTabs :tab=tab>
     <template #resume>
-      <WebTimeline></WebTimeline>
+      <WebTimeline :showDetail=showDetail></WebTimeline>
     </template>
     <template #skill>
       <div>
@@ -18,4 +18,5 @@ import { useRoute, useRouter } from 'vue-router';
 const route = useRoute();
 const { tab } = route.params;
 
+const showDetail = true;
 </script>
