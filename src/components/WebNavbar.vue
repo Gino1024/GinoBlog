@@ -12,7 +12,7 @@
         />
         <q-toolbar-title>
           <q-item>
-          <router-link to="`/home`" class="text-grey-8 link">Web App</router-link>
+          <router-link to="`/home`" class="text-grey-8 link">Gino App</router-link>
           </q-item>
         </q-toolbar-title>
       </q-toolbar>

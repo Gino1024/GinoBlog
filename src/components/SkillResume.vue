@@ -1,13 +1,11 @@
 <template>
-<div style='width:80%; margin:auto; border-radius:12px;'>
-  <div class="flex justify-start">
+  <div class="flex">
     <WebSideList style='' v-for='(item,index) in props.skillInfo'
     :key="index" :skillDetailInfo=item></WebSideList>
   </div>
-  <div class="q-mt-lg row reverse">
+  <div class="q-mt-xl row reverse">
     <q-btn label='Know More' @click='click'></q-btn>
   </div>
-</div>
 
 </template>
 <script setup lang='ts'>

@@ -1,22 +1,22 @@
 <template>
-  <div class="q-pa-md " style="width: 80%; border-radius:12px; margin:auto;">
+  <div class="q-pa-md ">
     <q-list>
-      <q-item>
-        <q-item-section>
-          <q-item-label>Single line item</q-item-label>
-          <q-item-label caption lines="2">Secondary line text. Lorem ipsum dolor
-          sit amet, consectetur adipiscit elit.</q-item-label>
-        </q-item-section>
+      <div v-for="(item,index) in articleData" :key="index">
+        <q-item :href='item.url' target='_blank'>
+          <q-item-section>
+            <q-item-label>{{item.title}}</q-item-label>
+            <q-item-label caption lines="2">{{item.content}}</q-item-label>
+          </q-item-section>
 
-        <q-item-section side top>
-          <q-item-label caption>5 min ago</q-item-label>
-          <q-icon name="star" color="yellow"></q-icon>
-        </q-item-section>
-      </q-item>
+          <q-item-section side top>
+            <q-item-label caption>{{item.createAt}}</q-item-label>
+            <q-icon name="star" color="yellow"></q-icon>
+          </q-item-section>
+        </q-item>
 
-      <q-separator spaced inset></q-separator>
-
-      <q-item>
+        <q-separator spaced inset></q-separator>
+      </div>
+      <!-- <q-item>
         <q-item-section>
           <q-item-label>Single line item</q-item-label>
           <q-item-label caption>Secondary line text. Lorem ipsum dolor sit amet,
@@ -73,7 +73,19 @@
         <q-item-section side top>
           <q-item-label caption>meta</q-item-label>
         </q-item-section>
-      </q-item>
+      </q-item> -->
     </q-list>
   </div>
 </template>
+<script setup lang='ts'>
+import { ref, defineProps } from 'vue';
+
+const props = defineProps({
+  articleData: {
+    type: Object,
+  },
+});
+
+const articleData = ref(props.articleData);
+console.log(props.articleData);
+</script>

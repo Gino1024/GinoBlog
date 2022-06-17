@@ -1,4 +1,5 @@
 <template>
+<div class="animate__animated animate__fadeIn">
   <WebTabs :tab=tab>
     <template #resume>
       <WebTimeline :showDetail=showDetail></WebTimeline>
@@ -9,6 +10,7 @@
       </div>
     </template>
   </WebTabs>
+</div>
 </template>
 <script setup lang='ts'>
 import AboutMe from '@/components/AboutMe.vue';

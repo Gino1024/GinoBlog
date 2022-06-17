@@ -13,11 +13,17 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: '/home',
         component: () => import('../views/WebHome.vue'),
+        meta: {
+          title: '首頁',
+        },
       },
       {
         path: '/self',
         name: 'self',
         component: () => import('../views/WebSelf.vue'),
+        meta: {
+          title: '介紹',
+        },
       },
     ],
   },
@@ -35,6 +41,14 @@ const router = createRouter({
   scrollBehavior(to, from, savedPosition) {
     return { top: 0 };
   },
+});
+
+router.beforeEach((to, from, next) => {
+  if (to.meta.title) {
+    const title: string = typeof to.meta.title === 'string' ? to.meta.title : '';
+    document.title = title;
+  }
+  next();
 });
 
 export default router;

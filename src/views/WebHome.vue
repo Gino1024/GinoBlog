@@ -1,14 +1,20 @@
 <template>
+<div class="animate__animated animate__fadeIn" style='width:80%; margin: auto;'>
   <WebBanner></WebBanner>
   <HorizonLine />
-  <ArticleList></ArticleList>
+  <ArticleList :articleData=articleData></ArticleList>
   <HorizonLine />
-  <AboutMe :showDetail=false></AboutMe>
+  <div class='animation-duration invisible' ref="aboutMe">
+    <AboutMe :showDetail=false></AboutMe>
+  </div>
   <HorizonLine />
-  <SkillResume :skillInfo=skillInfo></SkillResume>
+  <div class='animation-duration invisible' ref="skillResume">
+    <SkillResume :skillInfo=skillInfo></SkillResume>
+  </div>
   <!-- <WebFullCard @click="click" class="bg-color" style='cursor: pointer;' ></WebFullCard> -->
   <!-- <WebTree :skillInfo=skillInfo></WebTree> -->
   <HorizonLine />
+</div>
 
 </template>
 <script setup lang='ts'>
@@ -20,14 +26,16 @@ import ArticleList from '@/components/ArticleList.vue';
 import WebTree from '@/components/WebTree.vue';
 import SkillResume from '@/components/SkillResume.vue';
 import HorizonLine from '@/components/HorizonLine.vue';
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
-import ProfileInfoAPI from '@/api/ProfileInfoAPI';
+
+import GetDataAPI from '@/api/GetDataAPI';
 
 const router = useRouter();
 
-const skillInfo = ProfileInfoAPI.getSkillInfo().default;
-console.log('webhome', skillInfo.default);
+const skillInfo = GetDataAPI.getSkillInfo().default;
+const articleData = GetDataAPI.getArticleData().default;
+
 const click = () => {
   router.push(
     {
@@ -36,4 +44,40 @@ const click = () => {
     },
   );
 };
+
+const aboutMe = ref();
+const skillResume = ref();
+onMounted(() => {
+  console.log('aboutMe.value', aboutMe.value);
+  console.log('aboutMe.value.classList', aboutMe.value.classList);
+});
+
+let isShowAboutMe = false;
+let isShowSkill = false;
+const viewportWidth = document.documentElement.scrollWidth;
+document.addEventListener('scroll', (e) => {
+  const lastKnowScrollPosition = window.scrollY;
+  console.log(lastKnowScrollPosition);
+  if (lastKnowScrollPosition > 200 && !isShowAboutMe) {
+    isShowAboutMe = true;
+    aboutMe.value.classList.remove('invisible');
+    aboutMe.value.classList.add('animate__animated', 'animate__fadeInUp');
+  }
+
+  if (viewportWidth < 996 && lastKnowScrollPosition > 780 && !isShowSkill) {
+    isShowSkill = true;
+    skillResume.value.classList.remove('invisible');
+    skillResume.value.classList.add('animate__animated', 'animate__fadeInUp');
+  } else if (viewportWidth >= 996 && lastKnowScrollPosition > 500 && !isShowSkill) {
+    isShowSkill = true;
+    skillResume.value.classList.remove('invisible');
+    skillResume.value.classList.add('animate__animated', 'animate__fadeInUp');
+  }
+});
 </script>
+
+<style lang='scss'>
+  .animation-duration{
+    animation-duration: 1.2s;
+  }
+</style>

@@ -1,23 +1,21 @@
 <template>
-  <div class="row justify-center" style=''>
+  <div class="row justify-around wrap" style='width:80%; margin:auto;'>
 
-    <div class="column items-center" style='margin:auto'>
+    <div class="column items-center about-card-wrap">
       <q-avatar size="250px" >
         <img alt='profilePhoto' src="../assets/images/mimi.jpg">
       </q-avatar>
-      <div class="q-mt-md" style='max-width:60%'>
-        Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Iusto
-        necessitatibus tenetur eius non perspiciatis,
-        </div>
-        <div class="q-mt-lg">
+      <b class="q-mt-md" style='max-width:50%'>
+      Hi, 我是Gino, 主要開發語言是C#, 也有在使用dev/ops和網頁前端的技術
+      </b>
+        <div class="q-mt-xl">
           <q-btn label='Know More' @click='click'></q-btn>
         </div>
     </div>
 
-    <div class="column items-center" style='margin:auto'>
+    <div class="column items-center card-wrap">
 
-      <div class="q-mt-md" style='max-width:50%'>
+      <div class="q-mt-md">
       <WebTimeline :showDetail=showDetail></WebTimeline>
       </div>
     </div>
@@ -47,3 +45,19 @@ const click = () => {
   );
 };
 </script>
+
+<style lang='scss'>
+  .about-card-wrap{
+    width:50%;
+
+    @media screen and (min-width:800px){
+      :nth-child(2){
+      }
+    }
+
+    @media screen and (max-width:799px){
+      width: 100% ;
+      margin: auto;
+    }
+  }
+</style>
