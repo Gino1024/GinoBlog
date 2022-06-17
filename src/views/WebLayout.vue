@@ -1,9 +1,9 @@
 <template>
-<q-layout view="lHh Lpr lFf" class='bg-white'>
+<q-layout view="lHh Lpr lFf">
   <WebNavbar />
     <q-page-container>
       <router-view />
-      <WebFooter class="bg-color" />
+      <WebFooter />
     </q-page-container>
 </q-layout>
 </template>
@@ -14,9 +14,3 @@ import { ref } from 'vue';
 
 const slide = ref('first');
 </script>
-
-<style lang='scss'>
-.bg-color{
-  background: rgb(255, 250, 246) !important;
-}
-</style>

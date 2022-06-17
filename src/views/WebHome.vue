@@ -1,5 +1,7 @@
 <template>
 <div class="animate__animated animate__fadeIn animation12" style='width:80%; margin: auto;'>
+  <h2 style="" class="forn-linear-grey text-center
+  animate__animated animate__fadeInUp animation12">HELLO WORLD</h2>
   <WebBanner></WebBanner>
   <HorizonLine />
   <ArticleList :articleData=articleData></ArticleList>
@@ -58,17 +60,17 @@ const viewportWidth = document.documentElement.scrollWidth;
 document.addEventListener('scroll', (e) => {
   const lastKnowScrollPosition = window.scrollY;
   console.log(lastKnowScrollPosition);
-  if (lastKnowScrollPosition > 200 && !isShowAboutMe) {
+  if (lastKnowScrollPosition > 320 && !isShowAboutMe) {
     isShowAboutMe = true;
     aboutMe.value.classList.remove('invisible');
     aboutMe.value.classList.add('animate__animated', 'animate__fadeInUp');
   }
 
-  if (viewportWidth < 996 && lastKnowScrollPosition > 780 && !isShowSkill) {
+  if (viewportWidth < 996 && lastKnowScrollPosition > 1150 && !isShowSkill) {
     isShowSkill = true;
     skillResume.value.classList.remove('invisible');
     skillResume.value.classList.add('animate__animated', 'animate__fadeInUp');
-  } else if (viewportWidth >= 996 && lastKnowScrollPosition > 500 && !isShowSkill) {
+  } else if (viewportWidth >= 996 && lastKnowScrollPosition > 800 && !isShowSkill) {
     isShowSkill = true;
     skillResume.value.classList.remove('invisible');
     skillResume.value.classList.add('animate__animated', 'animate__fadeInUp');
@@ -78,5 +80,13 @@ document.addEventListener('scroll', (e) => {
 <style lang='scss'>
   .animation12{
     animation-duration: 1.2s;
+  }
+  .forn-linear-grey{
+    font-weight: 400;
+    background: linear-gradient(to top, #3a1c71, #666666, #ffaf7b);
+    background: -webkit-linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 </style>

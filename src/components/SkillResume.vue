@@ -4,7 +4,7 @@
     :key="index" :skillDetailInfo=item></WebSideList>
   </div>
   <div class="q-mt-xl row reverse">
-    <q-btn label='Know More' @click='click'></q-btn>
+    <q-btn outline class="bg-white text-teal-3"  label='Know More' @click='click'></q-btn>
   </div>
 
 </template>

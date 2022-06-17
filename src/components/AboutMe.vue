@@ -9,7 +9,8 @@
       Hi, 我是Gino, 主要開發語言是C#, 也有在使用dev/ops和網頁前端的技術
       </b>
         <div class="q-mt-xl">
-          <q-btn label='Know More' @click='click'></q-btn>
+          <q-btn outline class="bg-white text-teal-3
+          q-mb-lg" label='Know More' @click='click'></q-btn>
         </div>
     </div>
 

@@ -1,16 +1,18 @@
 <template>
-  <div class="q-pa-md ">
+  <div class="q-pa-md blue-grey-1 text-dark article-wrap">
     <q-list>
-      <div v-for="(item,index) in articleData" :key="index">
+      <div class='article-item' v-for="(item,index) in articleData" :key="index">
         <q-item :href='item.url' target='_blank'>
           <q-item-section>
-            <q-item-label>{{item.title}}</q-item-label>
-            <q-item-label caption lines="2">{{item.content}}</q-item-label>
+            <q-item-label class='article-title' >
+            <q-icon size='xs' v-if="item.important"
+            name="star" color="yellow"></q-icon>  {{item.title}}
+            </q-item-label>
+            <q-item-label class='article-content' caption lines="2">{{item.content}}</q-item-label>
           </q-item-section>
 
           <q-item-section side top>
             <q-item-label caption>{{item.createAt}}</q-item-label>
-            <q-icon name="star" color="yellow"></q-icon>
           </q-item-section>
         </q-item>
 
@@ -89,3 +91,16 @@ const props = defineProps({
 const articleData = ref(props.articleData);
 console.log(props.articleData);
 </script>
+
+<style lang='scss'>
+.article-wrap{
+  background: white;
+  border: 1px solid #ffffff62;
+  border-radius: 10px;
+  .article-item{
+    .article-title{
+      font-size: 16px;
+    }
+  }
+}
+</style>
