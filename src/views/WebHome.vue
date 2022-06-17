@@ -1,14 +1,14 @@
 <template>
-<div class="animate__animated animate__fadeIn wrap" style='width:80%; margin: auto;'>
+<div class="animate__animated animate__fadeIn animation12" style='width:80%; margin: auto;'>
   <WebBanner></WebBanner>
   <HorizonLine />
   <ArticleList :articleData=articleData></ArticleList>
   <HorizonLine />
-  <div class='animation-duration invisible' ref="aboutMe">
+  <div class='animation12 invisible' ref="aboutMe">
     <AboutMe :showDetail=false></AboutMe>
   </div>
   <HorizonLine />
-  <div class='animation-duration invisible' ref="skillResume">
+  <div class='animation12 invisible' ref="skillResume">
     <SkillResume :skillInfo=skillInfo></SkillResume>
   </div>
   <!-- <WebFullCard @click="click" class="bg-color" style='cursor: pointer;' ></WebFullCard> -->
