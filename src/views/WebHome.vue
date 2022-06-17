@@ -1,5 +1,5 @@
 <template>
-<div class="animate__animated animate__fadeIn" style='width:80%; margin: auto;'>
+<div class="animate__animated animate__fadeIn wrap" style='width:80%; margin: auto;'>
   <WebBanner></WebBanner>
   <HorizonLine />
   <ArticleList :articleData=articleData></ArticleList>
@@ -75,9 +75,5 @@ document.addEventListener('scroll', (e) => {
   }
 });
 </script>
-
 <style lang='scss'>
-  .animation-duration{
-    animation-duration: 1.2s;
-  }
 </style>

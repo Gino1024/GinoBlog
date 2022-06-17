@@ -14,7 +14,11 @@ import { ref } from 'vue';
 }
 </style>
 <style lang='scss'>
-.bg-color{
-  background: rgb(255, 250, 246) !important;
-}
+
+  .bg-color{
+    background: rgb(255, 250, 246) !important;
+  }
+  .wrap{
+    animation-duration: 1.2s;
+  }
 </style>

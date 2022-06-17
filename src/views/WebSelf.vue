@@ -1,5 +1,5 @@
 <template>
-<div class="animate__animated animate__fadeIn">
+<div class="animate__animated animate__fadeIn animation-duration wrap">
   <WebTabs :tab=tab>
     <template #resume>
       <WebTimeline :showDetail=showDetail></WebTimeline>

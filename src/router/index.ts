@@ -1,4 +1,5 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
+import { LoadingBar } from 'quasar';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -44,10 +45,12 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
+  LoadingBar.start();
   if (to.meta.title) {
     const title: string = typeof to.meta.title === 'string' ? to.meta.title : '';
     document.title = title;
   }
+  LoadingBar.stop();
   next();
 });
 
