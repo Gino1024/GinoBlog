@@ -76,4 +76,7 @@ document.addEventListener('scroll', (e) => {
 });
 </script>
 <style lang='scss'>
+  .animation12{
+    animation-duration: 1.2s;
+  }
 </style>

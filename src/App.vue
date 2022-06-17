@@ -1,5 +1,5 @@
 <template class="">
-  <router-view class='bg-color' />
+  <router-view class='' />
 </template>
 
 <script setup lang='ts'>
@@ -14,11 +14,7 @@ import { ref } from 'vue';
 }
 </style>
 <style lang='scss'>
-
   .bg-color{
     background: rgb(255, 250, 246) !important;
-  }
-  .wrap{
-    animation-duration: 1.2s;
   }
 </style>
