@@ -5,7 +5,7 @@
       <q-avatar size="250px" >
         <img alt='profilePhoto' src="../assets/images/mimi.jpg">
       </q-avatar>
-      <b class="q-mt-md" style='max-width:50%'>
+      <b class="q-mt-md">
       Hi, 我是Gino, 主要開發語言是C#, 也有在使用dev/ops和網頁前端的技術
       </b>
         <div class="q-mt-xl">

@@ -7,7 +7,7 @@
         { "label": "Typescript", "description":"", "img":"https://icon-library.com/images/mit-icon/mit-icon-25.jpg" }]
   },
   {
-    "label": "前端開發",
+    "label": "前端",
     "children": [
               { "label": "Vue", "description":"", "img":"https://icon-library.com/images/gitlab-icon/gitlab-icon-1.jpg" },
               { "label": "JQuery", "description":"", "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQGKzHAaSos2CggOOlhZ-cwWcxaul0OJ8nCLE-XIpEiWnjUOk&s" },
@@ -17,7 +17,7 @@
             ]
   },
   {
-    "label": "後端開發",
+    "label": "後端",
     "children": [
               { "label" : ".Net6/Core/Mvc", "description":"", "img":"https://icon-library.com/images/vb-net-icon/vb-net-icon-1.jpg" },
               { "label": "EF Core", "description":"", "img":"https://onebyone.icu/wp-content/uploads/2021/01/v2-e07214d18743923d1d986c92542e43fe_720w.png" },

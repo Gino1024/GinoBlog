@@ -49,10 +49,6 @@ const click = () => {
 
 const aboutMe = ref();
 const skillResume = ref();
-onMounted(() => {
-  console.log('aboutMe.value', aboutMe.value);
-  console.log('aboutMe.value.classList', aboutMe.value.classList);
-});
 
 let isShowAboutMe = false;
 let isShowSkill = false;
@@ -66,11 +62,11 @@ document.addEventListener('scroll', (e) => {
     aboutMe.value.classList.add('animate__animated', 'animate__fadeInUp');
   }
 
-  if (viewportWidth < 996 && lastKnowScrollPosition > 1150 && !isShowSkill) {
+  if (viewportWidth < 996 && lastKnowScrollPosition > 1700 && !isShowSkill) {
     isShowSkill = true;
     skillResume.value.classList.remove('invisible');
     skillResume.value.classList.add('animate__animated', 'animate__fadeInUp');
-  } else if (viewportWidth >= 996 && lastKnowScrollPosition > 800 && !isShowSkill) {
+  } else if (viewportWidth >= 996 && lastKnowScrollPosition > 1000 && !isShowSkill) {
     isShowSkill = true;
     skillResume.value.classList.remove('invisible');
     skillResume.value.classList.add('animate__animated', 'animate__fadeInUp');
