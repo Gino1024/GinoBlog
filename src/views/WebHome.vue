@@ -1,7 +1,5 @@
 <template>
 <div class="animate__animated animate__fadeIn animation12" style='width:80%; margin: auto;'>
-  <h2 style="" class="forn-linear-grey text-center
-  animate__animated animate__fadeInUp animation12">HELLO WORLD</h2>
   <WebBanner></WebBanner>
   <HorizonLine />
   <ArticleList :articleData=articleData></ArticleList>

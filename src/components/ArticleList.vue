@@ -5,10 +5,13 @@
         <q-item :href='item.url' target='_blank'>
           <q-item-section>
             <q-item-label class='article-title' >
-            <q-icon size='xs' v-if="item.important"
-            name="star" color="yellow"></q-icon>  {{item.title}}
+            <q-icon size='xs' v-if="item.important" name="star" color="yellow"></q-icon>
+            <q-icon size='xs' v-else name="" color="yellow"></q-icon>
+              {{item.title}}
             </q-item-label>
-            <q-item-label class='article-content' caption lines="2">{{item.content}}</q-item-label>
+            <q-item-label class='article-content' caption lines="2">
+              <q-icon size='xs' name=""></q-icon>
+              {{item.content}}</q-item-label>
           </q-item-section>
 
           <q-item-section side top>
@@ -101,6 +104,7 @@ console.log(props.articleData);
     .article-title{
       font-size: 16px;
     }
+    font-weight: 500;
   }
 }
 </style>

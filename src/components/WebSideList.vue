@@ -7,9 +7,9 @@
 
         <q-separator ></q-separator>
 
-        <q-card-actions vertical class=''>
+        <q-card-actions vertical>
           <q-btn flat  v-for='(item,index) in props.skillDetailInfo.children'
-          :key="index">{{item.label}}</q-btn>
+          :key="index" class='card-text'>{{item.label}}</q-btn>
         </q-card-actions>
       </q-card>
     </div>
@@ -51,6 +51,9 @@ const props = defineProps({
     @media screen and (min-width:0px) and (max-width:679px)  {
       min-width:300px;
       margin: auto;
+    }
+    .card-text{
+      font-family: 'Roboto';
     }
   }
 </style>

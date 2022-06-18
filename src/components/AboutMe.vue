@@ -1,24 +1,15 @@
 <template>
   <div class="row justify-around wrap" style='width:80%; margin:auto;'>
-
-    <div class="column items-center about-card-wrap">
-      <q-avatar size="250px" >
-        <img alt='profilePhoto' src="../assets/images/mimi.jpg">
-      </q-avatar>
-      <b class="q-mt-md">
-      Hi, 我是Gino, 主要開發語言是C#, 也有在使用dev/ops和網頁前端的技術
-      </b>
-        <div class="q-mt-xl">
-          <q-btn outline class="bg-white text-teal-3
-          q-mb-lg" label='Know More' @click='click'></q-btn>
-        </div>
-    </div>
-
     <div class="column items-center card-wrap">
-
       <div class="q-mt-md">
       <WebTimeline :showDetail=showDetail></WebTimeline>
       </div>
+    </div>
+    <div class="column items-center about-card-wrap">
+    <div class="q-mt-xl">
+      <q-btn outline class="bg-white text-teal-3
+      q-mb-lg" label='Know More' @click='click'></q-btn>
+    </div>
     </div>
   </div>
 </template>
