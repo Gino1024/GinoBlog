@@ -39,6 +39,7 @@ const slide = ref(1);
     border-radius: 10px;
     display: flex;
     align-items: center;
+    min-height: 600px;
     .banner-main{
       position: relative;
       min-height: 380px;
@@ -102,8 +103,12 @@ const slide = ref(1);
             color: white;
             width: 65%;
             line-height: 1.5;
-            font-size: 1vw;
+            font-size: 16px;
             font-weight: bold;
+            @media screen and (max-width: 820px) {
+              width: 100%;
+              font-size: 16px;
+            }
           }
         }
       }
