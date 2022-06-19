@@ -38,16 +38,22 @@ const slide = ref(1);
     height: 90vh;
     border-radius: 10px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 25px;
     min-height: 600px;
+    @media screen and (min-width: 820px) {
+      align-items: center;
+      margin-top: 0;
+    }
     .banner-main{
       position: relative;
-      min-height: 380px;
+      min-height: 60vh ;
       width: 100%;
       background: white;
       border-radius: 12px;
       @media screen and (min-width: 820px) {
         height: 70vh;
+        min-height: 380px;
       }
       .banner-pad{
         display: none;
@@ -70,13 +76,12 @@ const slide = ref(1);
         display: block;
         height: 100%;
         width: 100%;
-        background: #537f7f;
+        background: linear-gradient(45deg,#046767, #84cbcb);
         border-radius: 12px;
         @media screen and (min-width: 820px) {
           position: absolute;
           left: 0;
           width: 40%;
-          overflow: scroll;
         }
         .profile{
           margin-top:10%;

@@ -1,13 +1,13 @@
 <template>
   <div class="q-pa-md WebSideList-card-wrap row items-start q-gutter-md">
       <q-card class="my-card WebSideList-card bg-white text-dark">
-        <q-card-section class='bg-teal-6 text-white'>
+        <q-card-section class='text-white side-card-section'>
           <div class="text-h6 text-center">{{props.skillDetailInfo.label}}</div>
         </q-card-section>
 
         <q-separator ></q-separator>
 
-        <q-card-actions vertical>
+        <q-card-actions vertical class="side-card-actions">
           <q-btn flat  v-for='(item,index) in props.skillDetailInfo.children'
           :key="index" class='card-text'>{{item.label}}</q-btn>
         </q-card-actions>
@@ -54,6 +54,9 @@ const props = defineProps({
     }
     .card-text{
       font-family: 'Roboto';
+    }
+    .side-card-section{
+      background: linear-gradient(to left,#046767, #84cbcb);
     }
   }
 </style>
