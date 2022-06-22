@@ -4,17 +4,14 @@
       <div class="q-mt-md">
       <WebTimeline :showDetail=showDetail></WebTimeline>
       </div>
-    </div>
-    <div class="column items-center about-card-wrap">
-    <div class="q-mt-xl">
+
       <q-btn outline class="bg-white text-teal-3
       q-mb-lg" label='Know More' @click='click'></q-btn>
-    </div>
     </div>
   </div>
 </template>
 <script setup leng='ts'>
-import WebTimeline from '@/components/WebTimeline.vue';
+import WebTimeline from '@/components/WebHome/WebTimeline.vue';
 import { ref, defineProps } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 

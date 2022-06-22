@@ -13,15 +13,15 @@ const routes: Array<RouteRecordRaw> = [
     children: [
       {
         path: '/home',
-        component: () => import('../views/WebHome.vue'),
+        component: () => import('../views/WebHomeView.vue'),
         meta: {
-          title: '首頁',
+          title: 'Gino\'s Blog',
         },
       },
       {
         path: '/self',
         name: 'self',
-        component: () => import('../views/WebSelf.vue'),
+        component: () => import('../views/WebSelfView.vue'),
         meta: {
           title: '介紹',
         },

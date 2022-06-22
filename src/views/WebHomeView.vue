@@ -11,30 +11,25 @@
   <div class='animation12 invisible' ref="skillResume">
     <SkillResume :skillInfo=skillInfo></SkillResume>
   </div>
-  <!-- <WebFullCard @click="click" class="bg-color" style='cursor: pointer;' ></WebFullCard> -->
-  <!-- <WebTree :skillInfo=skillInfo></WebTree> -->
   <HorizonLine />
 </div>
 
 </template>
 <script setup lang='ts'>
-import WebBanner from '@/components/WebBanner.vue';
-import AboutMe from '@/components/AboutMe.vue';
-import WebCards from '@/components/WebCards.vue';
-import WebFullCard from '@/components/WebFullCard.vue';
-import ArticleList from '@/components/ArticleList.vue';
-import WebTree from '@/components/WebTree.vue';
-import SkillResume from '@/components/SkillResume.vue';
-import HorizonLine from '@/components/HorizonLine.vue';
-import { onMounted, ref } from 'vue';
+import WebBanner from '@/components/WebHome/WebBanner.vue';
+import AboutMe from '@/components/WebHome/AboutMe.vue';
+import ArticleList from '@/components/WebHome/ArticleList.vue';
+import SkillResume from '@/components/WebHome/SkillResume.vue';
+import HorizonLine from '@/components/Base/HorizonLine.vue';
+import { ref } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 
 import GetDataAPI from '@/api/GetDataAPI';
 
 const router = useRouter();
 
-const skillInfo = GetDataAPI.getSkillInfo().default;
-const articleData = GetDataAPI.getArticleData().default;
+const skillInfo = GetDataAPI.getSkillInfo();
+const articleData = GetDataAPI.getArticleData();
 
 const click = () => {
   router.push(

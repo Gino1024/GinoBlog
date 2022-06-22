@@ -1,6 +1,6 @@
 <template>
 <q-layout view="lHh Lpr lFf">
-  <WebNavbar />
+    <WebNavbar />
     <q-page-container>
       <router-view />
       <WebFooter />
@@ -8,8 +8,8 @@
 </q-layout>
 </template>
 <script setup lang='ts'>
-import WebNavbar from '@/components/WebNavbar.vue';
-import WebFooter from '@/components/WebFooter.vue';
+import WebNavbar from '@/components/LayoutItem/WebNavbar.vue';
+import WebFooter from '@/components/LayoutItem/WebFooter.vue';
 import { ref } from 'vue';
 
 const slide = ref('first');

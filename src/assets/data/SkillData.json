@@ -1,0 +1,74 @@
+[
+  {
+      "label": "程式語言",
+      "description": "",
+      "children": [
+        { "label": "C#", "description":"", "children":[] },
+        { "label": "Javascript", "description":"", "children":[] },
+        { "label": "Typescript", "description":"", "children":[] }]
+  },
+  {
+    "label": "前端",
+    "description": "",
+    "children": [
+              { "label": "Vue", "description":"", "children":[] },
+              { "label": "JQuery", "description":"", "children":[] },
+              { "label": "CSS/SCSS", "description":"", "children":[] },
+              { "label": "SingnalR", "description":"", "children":[] },
+              { "label": "Quasar", "description":"" , "children":[]}
+            ]
+  },
+  {
+    "label": "後端",
+    "description": "",
+    "children": [
+              { "label" : ".Net6/Core/Mvc", "description":"" , "children":[]},
+              { "label": "EF Core", "description":"" , "children":[]},
+              { "label": "Dapper", "description":"" , "children":[]},
+              { "label": "NUnit", "description":"" , "children":[]},
+              { "label" : "SignalR", "description":"" , "children":[]}
+            ]
+  },
+  {
+    "label": "資料庫",
+    "description": "",
+    "children": [
+              { "label": "MS SQL", "description":"" , "children":[]},
+              { "label": "Oracle", "description":"" , "children":[]},
+              { "label": "My SQL", "description":"" , "children":[]}
+            ]
+  },
+  {
+    "label": "作業系統",
+    "description": "",
+    "children": [
+              { "label": "Windows", "description":"" , "children":[]},
+              { "label": "Linux", "description":"" , "children":[]}
+            ]
+  },
+  {
+    "label": "伺服器",
+    "description": "",
+    "children": [
+              { "label": "IIS", "description":"" , "children":[]},
+              { "label": "nginx","description":"" , "children":[]}
+            ]   
+  },
+  {
+    "label": "雲服務",
+    "description": "",
+    "children": [
+        { "label": "AWS-EC2", "description":"" , "children":[]},
+        { "label": "AWS-S3", "description":"" , "children":[]},
+        { "label": "AWS-CloudFront", "description":"" , "children":[]},
+        { "label": "AWS-LoadBlance", "description":"" , "children":[]}
+      ]
+  },
+  {
+  "label": "其他",
+  "description": "",
+  "children": [
+      { "label": "Docker", "description":"" , "children":[]}
+    ]
+  }
+]

@@ -13,9 +13,9 @@
 </div>
 </template>
 <script setup lang='ts'>
-import AboutMe from '@/components/AboutMe.vue';
-import WebTimeline from '@/components/WebTimeline.vue';
-import WebTabs from '@/components/WebTabs.vue';
+import AboutMe from '@/components/WebHome/AboutMe.vue';
+import WebTimeline from '@/components/WebHome/WebTimeline.vue';
+import WebTabs from '@/components/WebSelf/WebTabs.vue';
 import { useRoute, useRouter } from 'vue-router';
 
 const route = useRoute();

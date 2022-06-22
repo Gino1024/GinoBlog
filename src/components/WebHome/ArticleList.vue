@@ -92,7 +92,6 @@ const props = defineProps({
 });
 
 const articleData = ref(props.articleData);
-console.log(props.articleData);
 </script>
 
 <style lang='scss'>
