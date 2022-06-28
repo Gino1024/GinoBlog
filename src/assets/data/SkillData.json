@@ -1,6 +1,6 @@
 [
   {
-      "label": "程式語言",
+      "label": "Langue",
       "description": "",
       "children": [
         { "label": "C#", "description":"", "children":[] },
@@ -8,7 +8,7 @@
         { "label": "Typescript", "description":"", "children":[] }]
   },
   {
-    "label": "前端",
+    "label": "Frontend",
     "description": "",
     "children": [
               { "label": "Vue", "description":"", "children":[] },
@@ -19,7 +19,7 @@
             ]
   },
   {
-    "label": "後端",
+    "label": "Backend",
     "description": "",
     "children": [
               { "label" : ".Net6/Core/Mvc", "description":"" , "children":[]},
@@ -30,7 +30,7 @@
             ]
   },
   {
-    "label": "資料庫",
+    "label": "Database",
     "description": "",
     "children": [
               { "label": "MS SQL", "description":"" , "children":[]},
@@ -39,7 +39,7 @@
             ]
   },
   {
-    "label": "作業系統",
+    "label": "OS",
     "description": "",
     "children": [
               { "label": "Windows", "description":"" , "children":[]},
@@ -47,7 +47,7 @@
             ]
   },
   {
-    "label": "伺服器",
+    "label": "Server",
     "description": "",
     "children": [
               { "label": "IIS", "description":"" , "children":[]},
@@ -55,7 +55,7 @@
             ]   
   },
   {
-    "label": "雲服務",
+    "label": "Cloud",
     "description": "",
     "children": [
         { "label": "AWS-EC2", "description":"" , "children":[]},
@@ -65,7 +65,7 @@
       ]
   },
   {
-  "label": "其他",
+  "label": "Other",
   "description": "",
   "children": [
       { "label": "Docker", "description":"" , "children":[]}

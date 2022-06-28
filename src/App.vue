@@ -12,6 +12,21 @@ import { ref } from 'vue';
     font-family: 'Roboto-Bold';
     src: url('./assets/font/Roboto/Roboto-Bold.ttf');
   }
+  @font-face {
+    font-family: 'JosefinSans';
+    src: url('./assets/font/JosefinSans/JosefinSans-Light.ttf');
+  }
+  @font-face {
+    font-family: 'NotoSansTC';
+    src: url('./assets/font/NotoSansTC/NotoSansTC-Light.otf');
+  }
+
+  .JosefinSans{
+    font-family: JosefinSans, sans-serif;
+  }
+  .NotoSansTC{
+    font-family: NotoSansTC, sans-serif;
+  }
 </style>
 <style lang='scss'>
 .bg-color{

@@ -28,11 +28,6 @@ const routes: Array<RouteRecordRaw> = [
       },
     ],
   },
-  {
-    path: '/Login',
-    name: 'LoginView',
-    component: () => import(/* webpackChunkName: "about" */ '../views/LoginView.vue'),
-  },
 ];
 
 const router = createRouter({
@@ -45,6 +40,12 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
+  LoadingBar.setDefaults({
+    color: 'red-5',
+    size: '5px',
+    position: 'top',
+  });
+
   LoadingBar.start();
   if (to.meta.title) {
     const title: string = typeof to.meta.title === 'string' ? to.meta.title : '';

@@ -4,20 +4,103 @@
     "content":"開發小型WebAPI專案, JWT驗證與資料的增刪修",
     "createAt":"2022/05/01",
     "url":"https://github.com/Gino1024/.net6-demo",
-    "important":"true"
+    "important":"true",
+    "tags":["C#","Net","Backend"]
   },
   {
     "title":"SignalR 實作聊天室",
-    "content":"學習 Real Time Web, 利用SignalR功能實作聊天室",
+    "content":"學習 Real Time Web, 使用SignalR實作聊天室, ",
     "createAt":"2022/06/02",
     "url":"https://github.com/Gino1024/SignalRDemo",
-    "important":""
+    "important":"",
+    "tags":["C#","Javascript","Backend","Frontend"]
   },
   {
-    "title":"Vue3 aka Quasar",
+    "title":"Vue3 + Quasar",
     "content":"製作自己的履歷網頁, 較輕量的方式實作Compsition API",
     "createAt":"2022/6/15",
     "url":"https://github.com/Gino1024/vue.demo",
-    "important":""
+    "important":"",
+    "tags":["Vue","Javascript","Frontend"]
+  },
+  {
+    "title":"測試1",
+    "content":"測試1",
+    "createAt":"2022/6/15",
+    "url":"https://github.com/Gino1024/vue.demo",
+    "important":"",
+    "tags":["Vue","Javascript","Frontend"]
+  },
+  {
+    "title":"測試2",
+    "content":"測試2",
+    "createAt":"2022/6/15",
+    "url":"https://github.com/Gino1024/vue.demo",
+    "important":"",
+    "tags":["Vue","Javascript","Frontend"]
+  },
+  {
+    "title":"測試3",
+    "content":"測試3",
+    "createAt":"2022/6/15",
+    "url":"https://github.com/Gino1024/vue.demo",
+    "important":"",
+    "tags":["Vue","Javascript","Frontend"]
+  },
+  {
+    "title":"測試4",
+    "content":"測試4",
+    "createAt":"2022/6/15",
+    "url":"https://github.com/Gino1024/vue.demo",
+    "important":"",
+    "tags":["Vue","Javascript","Frontend"]
+  },
+  {
+    "title":"測試5",
+    "content":"測試5",
+    "createAt":"2022/6/15",
+    "url":"https://github.com/Gino1024/vue.demo",
+    "important":"",
+    "tags":["Vue","Javascript","Frontend"]
+  },
+  {
+    "title":"測試6",
+    "content":"測試6",
+    "createAt":"2022/6/15",
+    "url":"https://github.com/Gino1024/vue.demo",
+    "important":"",
+    "tags":["Vue","Javascript","Frontend"]
+  },
+  {
+    "title":"測試7",
+    "content":"測試7",
+    "createAt":"2022/6/15",
+    "url":"https://github.com/Gino1024/vue.demo",
+    "important":"",
+    "tags":["Vue","Javascript","Frontend"]
+  },
+  {
+    "title":"測試8",
+    "content":"測試8",
+    "createAt":"2022/6/15",
+    "url":"https://github.com/Gino1024/vue.demo",
+    "important":"",
+    "tags":["Vue","Javascript","Frontend"]
+  },
+  {
+    "title":"測試9",
+    "content":"測試9",
+    "createAt":"2022/6/15",
+    "url":"https://github.com/Gino1024/vue.demo",
+    "important":"",
+    "tags":["Vue","Javascript","Frontend"]
+  },
+  {
+    "title":"測試10",
+    "content":"測試10",
+    "createAt":"2022/6/15",
+    "url":"https://github.com/Gino1024/vue.demo",
+    "important":"",
+    "tags":["Vue","Javascript","Frontend"]
   }
 ]

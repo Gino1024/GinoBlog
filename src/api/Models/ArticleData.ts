@@ -4,4 +4,5 @@ export interface ArticleData {
   createAt: string,
   url: string,
   import: string,
+  tags: string[],
 }

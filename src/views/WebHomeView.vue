@@ -2,7 +2,7 @@
 <div class="animate__animated animate__fadeIn animation12" style='width:80%; margin: auto;'>
   <WebBanner></WebBanner>
   <HorizonLine />
-  <ArticleList :articleData=articleData></ArticleList>
+  <WebArticle />
   <HorizonLine />
   <div class='animation12 invisible' ref="aboutMe">
     <AboutMe :showDetail=false></AboutMe>
@@ -11,25 +11,25 @@
   <div class='animation12 invisible' ref="skillResume">
     <SkillResume :skillInfo=skillInfo></SkillResume>
   </div>
-  <HorizonLine />
 </div>
 
 </template>
 <script setup lang='ts'>
-import WebBanner from '@/components/WebHome/WebBanner.vue';
-import AboutMe from '@/components/WebHome/AboutMe.vue';
-import ArticleList from '@/components/WebHome/ArticleList.vue';
-import SkillResume from '@/components/WebHome/SkillResume.vue';
+import WebBanner from '@/components/AboutMyself/WebBanner.vue';
+import AboutMe from '@/components/AboutMyself/AboutMe.vue';
+import ArticleTags from '@/components/Article/ArticleTags.vue';
+import SkillResume from '@/components/AboutMyself/SkillResume.vue';
 import HorizonLine from '@/components/Base/HorizonLine.vue';
+import ListPagination from '@/components/Base/ListPagination.vue';
+import SearchForm from '@/components/Base/SearchForm.vue';
 import { ref } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
-
 import GetDataAPI from '@/api/GetDataAPI';
+import WebArticle from './ＷebArticle.vue';
 
 const router = useRouter();
 
 const skillInfo = GetDataAPI.getSkillInfo();
-const articleData = GetDataAPI.getArticleData();
 
 const click = () => {
   router.push(
@@ -48,7 +48,6 @@ let isShowSkill = false;
 const viewportWidth = document.documentElement.scrollWidth;
 document.addEventListener('scroll', (e) => {
   const lastKnowScrollPosition = window.scrollY;
-  console.log(lastKnowScrollPosition);
   if (lastKnowScrollPosition > 320 && !isShowAboutMe) {
     isShowAboutMe = true;
     aboutMe.value.classList.remove('invisible');
@@ -78,4 +77,12 @@ document.addEventListener('scroll', (e) => {
     -webkit-background-clip: text;
     color: transparent;
   }
+
+  .articleList{
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    margin-top: 30px;
+  }
+
 </style>
