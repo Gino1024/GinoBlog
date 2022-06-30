@@ -8,7 +8,7 @@
   <div class="row justify-center">
     <ListPagination :totalPage=totalPage @paging='Paging'></ListPagination>
   </div>
-  <div class="articleList">
+  <div class="articleList q-mt-md bg-white">
     <ArticleList :articleData=articleData></ArticleList>
   </div>
 </template>
@@ -40,7 +40,7 @@ const notify = (_message:string, _color:string) => {
   $q.notify({
     message: _message,
     color: _color,
-    position: 'top',
+    position: 'top-right',
   });
 };
 

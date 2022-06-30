@@ -1,7 +1,7 @@
 <template>
 <div class="banner">
   <div class='banner-main'>
-    <div class="banner-pad NotoSansTC ">
+    <div class="banner-pad JosefinSans ">
       <div>Backend</div><div>Developer</div>
     </div>
     <div class="banner-left bg-base">
@@ -10,7 +10,8 @@
           <img alt='profilePhoto' src="../../assets/images/mimi.jpg">
         </div>
         <div class="profile-content NotoSansTC">
-          <p>Hi I'm Gino <br><br> 目前有四年.Net程式開發經驗，從一般的網站開發到前後端分離，都有豐富的經驗。工作之餘也喜愛學習跳脫微軟框架的開發技術。</p>
+          <p>Hi I'm Gino <br><br> 我主要負責是後端工程，從一般的網站開發到前後端分離，
+          都有豐富的經驗。工作之餘也喜愛學習跳脫微軟框架的開發技術。</p>
         </div>
       </div>
     </div>
@@ -36,31 +37,34 @@ const slide = ref(1);
     position: relative;
     width: 100%;
     height: 90vh;
+    min-height: 700px;
     border-radius: 10px;
     display: flex;
     align-items: flex-start;
-    min-height: 600px;
+    @media screen and (min-width: 0px) and (max-width: 820px) {
+
+    }
     @media screen and (min-width: 820px) {
       align-items: center;
       margin-top: 0;
     }
     .banner-main{
       position: relative;
-      min-height: 60vh ;
+      min-height: 480px !important ;
       width: 100%;
       background: white;
       border-radius: 12px;
-      @media screen and (min-width: 820px) {
-        height: 70vh;
+      @media screen and (min-width: 821px) {
+        height: 80vh;
         min-height: 380px;
       }
       .banner-pad{
         display: none;
+        padding: 20px 0;
         @media screen and (max-width: 820px) {
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100%;
             font-size: 13vw;
             letter-spacing: 2px;
             flex-direction: column;
@@ -72,7 +76,7 @@ const slide = ref(1);
         height: 100%;
         width: 100%;
         border-radius: 12px;
-        @media screen and (min-width: 820px) {
+        @media screen and (min-width: 821px) {
           position: absolute;
           left: 0;
           width: 40%;

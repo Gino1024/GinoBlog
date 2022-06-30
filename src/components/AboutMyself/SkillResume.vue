@@ -3,7 +3,7 @@
     <WebCardList style='' v-for='(item,index) in props.skillInfo'
     :key="index" :skillDetailInfo=item></WebCardList>
   </div>
-  <div class="q-mt-xl row justify-center">
+  <div  v-if='false' class="q-mt-xl row justify-center">
     <q-btn outline class="bg-white JosefinSans"  label='Know More' @click='click'></q-btn>
   </div>
 

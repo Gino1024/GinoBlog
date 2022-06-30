@@ -1,7 +1,7 @@
 <template>
 <q-layout view="lHh Lpr lFf">
     <WebNavbar />
-    <q-page-container  style='width:80%; margin: auto;'>
+    <q-page-container  style='width:80%; margin: 10px auto;'>
       <router-view />
       <WebFooter />
     </q-page-container>

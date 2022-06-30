@@ -5,33 +5,26 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/:pathMatch(.*)*',
     component: {},
-    redirect: { path: '/home' },
+    redirect: { path: '/AboutMe' },
   },
   {
     path: '/web',
     component: () => import('../views/WebLayout.vue'),
     children: [
       {
-        path: '/home',
+        path: '/aboutme',
+        name: 'aboutme',
         component: () => import('../views/WebHomeView.vue'),
         meta: {
-          title: 'Gino\'s Blog',
+          title: 'Gino\'s AboutMe',
         },
       },
       {
-        path: '/self',
-        name: 'self',
-        component: () => import('../views/WebSelfView.vue'),
-        meta: {
-          title: '介紹',
-        },
-      },
-      {
-        path: '/article',
-        name: 'article',
+        path: '/blog',
+        name: 'blog',
         component: () => import('../views/WebArticleView.vue'),
         meta: {
-          title: '介紹',
+          title: 'Gino\'s Blog',
         },
       },
     ],

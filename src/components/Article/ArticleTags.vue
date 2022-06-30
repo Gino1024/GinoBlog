@@ -1,6 +1,6 @@
 <template>
   <div class="row NotoSansTC">
-    <button class="tags" v-for="(item, index) in selectList" :key="index"
+    <button class="tags  q-mb-md" v-for="(item, index) in selectList" :key="index"
     :class="{ active : item.isSeleted }"
     @click="setActive(index)">{{item.label}}</button>
   </div>
@@ -71,13 +71,20 @@ watch(() => props.isClear, (newValue, oldValue) => {
     color: #616161;
     text-align: center;
     margin-right: 15px;
-    transition: .2s;
+    transition: .3s;
+    margin: 0px 5px;
+
+    @media screen and (max-width:428px) {
+      width: 40%;
+      margin: 5px auto;
+    }
+
     &:hover{
-      background: linear-gradient(to bottom right,#666666, #000000);
+      background: #000000;
       color: #ffffff;
     }
     &.active{
-      background: linear-gradient(to bottom right,#666666, #000000);
+      background: #000000;
       color: #ffffff;
     }
   }

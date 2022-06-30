@@ -14,17 +14,21 @@
               ? item.content.replace(item.content.substring(30,item.content.length),'...')
               : item.content}}</div>
 
-            <div class="q-ml-md" style='width:100%'>
+            <div class="q-ml-md q-mb-md" style='width:100%'>
               <button class='tag' v-for='(item,index) in item.tags' :key="index">
                 {{item}}</button>
             </div>
+            <div class="q-mt-xs flex justify-end" style='width:100%'>
+              <q-icon size='xs' v-if="item.important" name="star" color="yellow"></q-icon>
+              {{item.createAt}}
+            </div>
           </q-item-section>
 
-          <q-item-section side top>
+          <!-- <q-item-section side top>
             <q-item-label caption>
               <q-icon size='xs' v-if="item.important" name="star" color="yellow"></q-icon>
               {{item.createAt}}</q-item-label>
-          </q-item-section>
+          </q-item-section> -->
         </q-item>
 
         <q-separator spaced inset></q-separator>
@@ -58,6 +62,7 @@ const props = defineProps({
     }
     .article-content{
       font-size: 16px;
+      color:#9b9b9b;
     }
   }
 }
@@ -68,7 +73,6 @@ const props = defineProps({
   font-size: 12px;
   padding: 3px 10px;
   letter-spacing: 1.5px;
-  min-width: 60px;
   background: linear-gradient(to bottom right,#666666, #000000);
   border: .5px solid #616161;
   border-radius: 10px;

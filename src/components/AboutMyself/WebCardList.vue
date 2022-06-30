@@ -32,7 +32,7 @@ const props = defineProps({
       margin-left: 3% ;
     }
     @media screen and (min-width:1200px)  {
-      width: calc(15%);
+      width: calc(20%);
       margin-left: 4.2% ;
     }
   }

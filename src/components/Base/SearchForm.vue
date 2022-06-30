@@ -1,6 +1,6 @@
 <template>
   <div class="row items-center justify-center column  q-mb-md">
-    <div class="q-mb-md" style='width:50%; min-width:300px;'>
+    <div class="q-mb-md" style='width:50%; min-width:250px;'>
       <q-input @keyup.enter="Search"
       standout="bg-grey-8 text-white" label="Title" v-model="title"></q-input>
     </div>

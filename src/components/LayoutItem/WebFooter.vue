@@ -1,5 +1,5 @@
 <template>
-  <div class='row justify-around q-pa-lg q-ma-md'>
+  <div class='row justify-around q-pa-lg q-mt-xl'>
     <div class='JosefinSans'>
       Copyright© Gino
     </div>
