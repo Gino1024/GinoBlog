@@ -1,6 +1,6 @@
 <template>
 <div class="q-px-lg q-pb-md">
-    <q-timeline color="secondary" class="NotoSansTC">
+    <q-timeline color="black" class="NotoSansTC">
 
       <q-timeline-entry heading v-if='showDetail'>
         Experience
@@ -8,6 +8,7 @@
       <q-timeline-entry
         title=".Net 資深軟體工程師"
         subtitle="悅慶資訊  March , 2022"
+        icon="fa-solid fa-angle-up"
       >
       <div class='timeline-description'>
         1. 增修與維運網站系統, 負責開發與協助設計API與排程, 系統採前後端分離<br>
@@ -19,6 +20,7 @@
       <q-timeline-entry
         title="軟體工程師"
         subtitle="皓展資訊  April , 2020"
+        icon="fa-solid fa-angle-up"
       >
       <div class='timeline-description'>
         1. 增修與維運網站系統<br>
@@ -31,6 +33,7 @@
       <q-timeline-entry
         title="工程師"
         subtitle="義美聯電  January , 2019"
+        icon="fa-solid fa-angle-up"
       >
       <div class='timeline-description'>
         1. 維運網站系統，完成主管交辦功能項<br>

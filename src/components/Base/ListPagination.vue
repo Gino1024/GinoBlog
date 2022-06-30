@@ -4,7 +4,7 @@
       :max=totalPage
       direction-links
       push
-      color="teal"
+      color="grey-8"
       style="margin:35px 0 0 0"
       @click="Paging"
     ></q-pagination>

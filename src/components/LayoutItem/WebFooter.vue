@@ -1,6 +1,6 @@
 <template>
   <div class='row justify-around q-pa-lg q-ma-md'>
-    <div class=''>
+    <div class='JosefinSans'>
       Copyright© Gino
     </div>
     <div class="q-gutter-md text-primary" style="font-size: 2em;">

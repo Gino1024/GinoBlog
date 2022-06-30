@@ -1,13 +1,18 @@
 <template>
   <div class="row items-center justify-center column  q-mb-md">
-    <div class="q-mb-md" style='width:50%;'>
+    <div class="q-mb-md" style='width:50%; min-width:300px;'>
       <q-input @keyup.enter="Search"
-      standout="bg-teal-3 text-white" label="Title" v-model="title"></q-input>
+      standout="bg-grey-8 text-white" label="Title" v-model="title"></q-input>
     </div>
-    <div class="q-mb-md ">
-      <q-btn color="primary" @click="Search" icon="fas fa-search" title='查詢'></q-btn>
-      <q-btn color="red" @click="Clear" class="q-ml-md"
-      icon="fa-solid fa-trash-can" title='清除'></q-btn>
+    <div class="JosefinSans q-mb-md ">
+      <q-btn @click="Search" class='bg-base text-white'
+      title='Search'><span class='q-ml-xs txt'>
+        <q-icon size='xs' name='fas fa-search' color='white'></q-icon>
+        Search</span></q-btn>
+      <q-btn @click="Clear" class="q-ml-md bg-red-4 text-white"
+      title='Clear'><span class='q-ml-xs txt'>
+        <q-icon size='xs' name='fa-solid fa-trash-can' color='white'></q-icon>
+        Clear</span></q-btn>
     </div>
   </div>
 </template>
@@ -26,3 +31,9 @@ const Clear = () => {
   emit('Clear');
 };
 </script>
+
+<style lang='scss'>
+.txt{
+  font-weight: bold;
+}
+</style>

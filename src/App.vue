@@ -27,6 +27,15 @@ import { ref } from 'vue';
   .NotoSansTC{
     font-family: NotoSansTC, sans-serif;
   }
+  .bg-base{
+    background: linear-gradient(to bottom right,#666666, #000000) !important;
+  }
+  .animation12{
+    animation-duration: 1.2s;
+  }
+  .animation20{
+    animation-duration: 2s;
+  }
 </style>
 <style lang='scss'>
 .bg-color{

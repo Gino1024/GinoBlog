@@ -30,7 +30,7 @@
             <q-icon name="home" />
           </q-item-section>
           <q-item-section>
-            <q-item-label class="NotoSansTC">首頁</q-item-label>
+            <q-item-label class="NotoSansTC">Home</q-item-label>
           </q-item-section>
         </q-item>
         <q-item clickable target="_self" rel="noopener" :to='`/self`'>
@@ -38,8 +38,16 @@
             <q-icon name="school" />
           </q-item-section>
           <q-item-section>
-            <q-item-lab class="JosefinSans">介紹</q-item-lab>
+            <q-item-lab class="JosefinSans">Resume</q-item-lab>
           </q-item-section>
+        </q-item>
+          <q-item clickable target="_self" rel="noopener" :to='`/article`'>
+            <q-item-section avatar>
+              <q-icon name="article" />
+            </q-item-section>
+            <q-item-section>
+              <q-item-lab class="JosefinSans">Article</q-item-lab>
+            </q-item-section>
         </q-item>
       </q-list>
     </q-drawer>

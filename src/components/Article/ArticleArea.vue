@@ -1,15 +1,15 @@
 <template>
-<div class="q-ma-auto">
+  <div class="q-ma-auto">
     <SearchForm @Search='Search' @Clear='Clear'></SearchForm>
   </div>
   <div class="row justify-center">
-    <ArticleTags @Search='TagSearch'></ArticleTags>
-  </div>
-  <div class="articleList">
-    <ArticleList :articleData=articleData></ArticleList>
+    <ArticleTags :isClear=isClear @Search='TagSearch'></ArticleTags>
   </div>
   <div class="row justify-center">
     <ListPagination :totalPage=totalPage @paging='Paging'></ListPagination>
+  </div>
+  <div class="articleList">
+    <ArticleList :articleData=articleData></ArticleList>
   </div>
 </template>
 <script setup lang="ts">
@@ -33,6 +33,8 @@ const totalPage = ref(1);
 
 const title = ref('');
 const articleData = ref({});
+const tags = ref([]);
+const isClear = ref(false);
 
 const notify = (_message:string, _color:string) => {
   $q.notify({
@@ -54,7 +56,7 @@ const GetData = (_title : string, _page : number, _tags: string[], isShowMessage
   totalPage.value = Math.ceil(result.length / props.pageOfCount);
   const articleDatas = result.splice((_page - 1) * props.pageOfCount, props.pageOfCount);
   articleData.value = articleDatas;
-  if (isShowMessage && result.length > 0) {
+  if (isShowMessage) {
     notify('查詢成功', 'green');
   }
 };
@@ -68,9 +70,10 @@ const TagSearch = (_tags : string[]) => {
   GetData(title.value, page.value, _tags, false);
 };
 const Clear = () => {
+  isClear.value = !isClear.value;
   title.value = '';
   page.value = 1;
-  GetData(title.value, page.value, emptyArr, true);
+  GetData(title.value, page.value, emptyArr, false);
 };
 const Paging = (_page : number) => {
   page.value = _page;

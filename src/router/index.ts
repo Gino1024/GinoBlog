@@ -26,6 +26,14 @@ const routes: Array<RouteRecordRaw> = [
           title: '介紹',
         },
       },
+      {
+        path: '/article',
+        name: 'article',
+        component: () => import('../views/WebArticleView.vue'),
+        meta: {
+          title: '介紹',
+        },
+      },
     ],
   },
 ];

@@ -5,8 +5,8 @@
       <WebTimeline :showDetail=showDetail></WebTimeline>
       </div>
 
-      <q-btn outline class="bg-white text-teal-3
-      q-mb-lg" label='Know More' @click='click'></q-btn>
+      <q-btn outline class="bg-white
+      q-mb-lg JosefinSans" label='Know More' @click='click'></q-btn>
     </div>
   </div>
 </template>

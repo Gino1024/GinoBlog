@@ -1,8 +1,8 @@
 <template>
-<div class="animate__animated animate__fadeIn animation12" style='width:80%; margin: auto;'>
+<div class="animate__animated animate__fadeIn">
   <WebBanner></WebBanner>
   <HorizonLine />
-  <WebArticle />
+  <ArticleArea :pageOfCount=5 />
   <HorizonLine />
   <div class='animation12 invisible' ref="aboutMe">
     <AboutMe :showDetail=false></AboutMe>
@@ -25,7 +25,7 @@ import SearchForm from '@/components/Base/SearchForm.vue';
 import { ref } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 import GetDataAPI from '@/api/GetDataAPI';
-import WebArticle from './ＷebArticle.vue';
+import ArticleArea from '@/components/Article/ArticleArea.vue';
 
 const router = useRouter();
 
@@ -66,9 +66,6 @@ document.addEventListener('scroll', (e) => {
 });
 </script>
 <style lang='scss'>
-  .animation12{
-    animation-duration: 1.2s;
-  }
   .forn-linear-grey{
     font-weight: 400;
     background: linear-gradient(to top, #3a1c71, #666666, #ffaf7b);

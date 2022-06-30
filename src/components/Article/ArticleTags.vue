@@ -6,7 +6,13 @@
   </div>
 </template>
 <script setup lang="ts">
-import { ref, defineEmits } from 'vue';
+import
+{
+  ref,
+  defineEmits,
+  defineProps,
+  watch,
+} from 'vue';
 
 interface SelectList {
   label: string,
@@ -30,12 +36,29 @@ const selectList = ref([{
   isSeleted: false,
 }]);
 
+const props = defineProps({
+  isClear: Boolean,
+});
 const emit = defineEmits(['Search']);
 
 const setActive = (index: number) => {
   selectList.value[index].isSeleted = !selectList.value[index].isSeleted;
   emit('Search', selectList.value.filter((m) => m.isSeleted === true).map((m) => m.label));
 };
+
+const Clear = () => {
+  console.log('tags,clear');
+  selectList.value.map((item) => {
+    const e = item;
+    e.isSeleted = false;
+    return e;
+  });
+};
+
+watch(() => props.isClear, (newValue, oldValue) => {
+  Clear();
+});
+
 </script>
 <style lang='scss'>
   .tags{
@@ -43,18 +66,18 @@ const setActive = (index: number) => {
     padding: 5px 10px;
     min-width: 60px;
     background: #ffffff;
-    border: 1px solid #80CBC4;
+    border: 1px solid #616161;
     border-radius: 10px;
-    color: #80CBC4;
+    color: #616161;
     text-align: center;
     margin-right: 15px;
     transition: .2s;
     &:hover{
-      background: #80CBC4;
+      background: linear-gradient(to bottom right,#666666, #000000);
       color: #ffffff;
     }
     &.active{
-      background: #80CBC4;
+      background: linear-gradient(to bottom right,#666666, #000000);
       color: #ffffff;
     }
   }

@@ -1,10 +1,10 @@
 <template>
 <div class="banner">
   <div class='banner-main'>
-    <div class="banner-pad NotoSansTC">
+    <div class="banner-pad NotoSansTC ">
       <div>Backend</div><div>Developer</div>
     </div>
-    <div class="banner-left">
+    <div class="banner-left bg-base">
       <div class="profile">
         <div class="profile-photo">
           <img alt='profilePhoto' src="../../assets/images/mimi.jpg">
@@ -39,7 +39,6 @@ const slide = ref(1);
     border-radius: 10px;
     display: flex;
     align-items: flex-start;
-    margin-top: 25px;
     min-height: 600px;
     @media screen and (min-width: 820px) {
       align-items: center;
@@ -72,7 +71,6 @@ const slide = ref(1);
         display: block;
         height: 100%;
         width: 100%;
-        background: linear-gradient(to top left,#84cbcb, #046767);
         border-radius: 12px;
         @media screen and (min-width: 820px) {
           position: absolute;
