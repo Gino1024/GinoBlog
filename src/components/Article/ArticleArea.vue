@@ -13,7 +13,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { defineProps, ref, onBeforeMount } from 'vue';
+import { defineProps, ref, onMounted } from 'vue';
 import ArticleList from '@/components/Article/ArticleList.vue';
 import ArticleTags from '@/components/Article/ArticleTags.vue';
 import ListPagination from '@/components/Base/ListPagination.vue';
@@ -46,19 +46,20 @@ const notify = (_message:string, _color:string) => {
 
 const GetData = (_title : string, _page : number, _tags: string[], isShowMessage = false)
 : void => {
-  const result = GetDataAPI.getArticleData().filter(
-    (m) => m.title.toLowerCase().indexOf(_title.toLowerCase()) > -1
-        && (m.tags.some((n) => _tags.includes(n)) || _tags.length === 0),
-  );
-  if (isShowMessage && result.length === 0) {
-    notify('查無資料', 'red');
-  }
-  totalPage.value = Math.ceil(result.length / props.pageOfCount);
-  const articleDatas = result.splice((_page - 1) * props.pageOfCount, props.pageOfCount);
-  articleData.value = articleDatas;
-  if (isShowMessage) {
-    notify('查詢成功', 'green');
-  }
+  const data = GetDataAPI.getArticleData().then((res) => {
+    const result = res.data.data
+      .filter((m) => m.title.toLowerCase().indexOf(_title.toLowerCase()) > -1
+      && (m.tags.some((n) => _tags.includes(n)) || _tags.length === 0));
+    if (isShowMessage && result.length === 0) {
+      notify('查無資料', 'red');
+    }
+    totalPage.value = Math.ceil(result.length / props.pageOfCount);
+    const articleDatas = result.splice((_page - 1) * props.pageOfCount, props.pageOfCount);
+    articleData.value = articleDatas;
+    if (isShowMessage) {
+      notify('查詢成功', 'green');
+    }
+  });
 };
 
 const Search = (_title : string) => {
@@ -80,7 +81,7 @@ const Paging = (_page : number) => {
   GetData(title.value, page.value, emptyArr);
 };
 
-onBeforeMount(() => {
+onMounted(() => {
   GetData(title.value, page.value, emptyArr);
 });
 

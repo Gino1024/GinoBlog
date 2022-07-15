@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Set Base Url Paras
-const port = 1001;
+const port = 5047;
 const baseUrl = '/api';
 const { protocol, hostname } = window.location;
 
@@ -22,22 +22,24 @@ const noTokenRequests = ['/Login'];
 // Request Interceptors
 handler.interceptors.request.use(
   (config) => {
-    console.log(config);
+    console.log('handler', config);
     return config;
   },
   (error) => {
-    console.log(error);
+    console.log('handler', error);
     return Promise.reject(error);
   },
 );
 // Response Interceptors
 handler.interceptors.response.use(
   (config) => {
-    console.log(config);
+    console.log('handler', config);
     return config;
   },
   (error) => {
-    console.log(error);
+    console.log('handler', error);
     return Promise.reject(error);
   },
 );
+
+export default handler;
