@@ -12,11 +12,11 @@ const getSkillInfo = () : SkillInfo[] => {
 };
 
 const getArticleData = () => {
-  // const obj = JSON.stringify(articleData);
-  // const result : ArticleData[] = JSON.parse(obj);
-  // return result;
-  const url = '/Article';
-  return axios.get<StandrardResponseDto<ArticleData[]>>(url);
+  const obj = JSON.stringify(articleData);
+  const result : ArticleData[] = JSON.parse(obj);
+  return result;
+  // const url = '/Article';
+  // return axios.get<StandrardResponseDto<ArticleData[]>>(url);
 };
 
 export default {

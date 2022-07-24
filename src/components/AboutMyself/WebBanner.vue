@@ -7,7 +7,7 @@
     <div class="banner-left bg-base">
       <div class="profile">
         <div class="profile-photo">
-          <img alt='profilePhoto' src="../../assets/images/mimi.jpg">
+          <img alt='profilePhoto' src="../../assets/images/me.png">
         </div>
         <div class="profile-content NotoSansTC">
           <p>Hi I'm Gino <br><br> 我主要負責是後端工程，從一般的網站開發到前後端分離，
@@ -36,8 +36,6 @@ const slide = ref(1);
   .banner{
     position: relative;
     width: 100%;
-    height: 90vh;
-    min-height: 700px;
     border-radius: 10px;
     display: flex;
     align-items: flex-start;
@@ -95,12 +93,13 @@ const slide = ref(1);
           .profile-photo{
             display: flex;
             justify-content: center;
+
             img{
-              width:70%;
-              min-width: 190px;
-              border-radius: 400px;
-              border: 3px solid white;
+              background: #ffffff;
+              width:65%;
               margin-bottom: 35px;
+              border-radius: 50%;
+              border: 3px solid white;
             }
           }
           .profile-content{
