@@ -6,6 +6,18 @@
         Experience
       </q-timeline-entry>
       <q-timeline-entry
+        title="系統設計師"
+        subtitle="統一資訊 Sep , 2022"
+        icon="fa-solid fa-angle-up"
+      >
+      <div class='timeline-description'>
+        1. 開發與維運大型電商後台專案<br>
+        2. 5人開發小組Team Leader<br>
+        3. 優化舊有程式效能<br>
+        4. 解決PG, SA開發設計問題 與 Codereview<br>
+      </div>
+      </q-timeline-entry>
+      <q-timeline-entry
         title=".Net 資深軟體工程師"
         subtitle="悅慶資訊  March , 2022"
         icon="fa-solid fa-angle-up"

@@ -1,5 +1,37 @@
 [
   {
+    "title":"SQL Server 發生 Uncommittable transaction is detected at the end of the batch. The transaction is rolled back. 錯誤",
+    "content":"Uncommittable transaction is detected at the end of the batch. The transaction is rolled back. 錯誤",
+    "createAt":"2022/4/13",
+    "url":"https://medium.com/@ginoweng1024/sql-server-%E7%99%BC%E7%94%9F-uncommittable-transaction-is-detected-at-the-end-of-the-batch-9792da923e2c",
+    "important":"",
+    "tags":["SQLServer","TroubleShooting"]
+  },
+  {
+    "title":"DesignPattern01 - Singleton Pattern",
+    "content":"Singleton Pattern 單例模式，其目的是確保類別只有一個實例存在，並提供給全域使用。",
+    "createAt":"2022/4/19",
+    "url":"https://medium.com/@ginoweng1024/designpattern01-singleton-pattern-a56ed49f7c3c",
+    "important":"",
+    "tags":["Design"]
+  },
+  {
+    "title":"DesignPattern02 - Factory Method Pattern",
+    "content":"工廠方法模式對我來說實際上的主要魅力是可以讓我減少一大堆的IF-ELSE的處理..有點膚淺XD，不過其實如果要用術語一點來說，就是解決程式碼的耦合性、可維護性、可測試性。",
+    "createAt":"2022/4/20",
+    "url":"https://medium.com/@ginoweng1024/designpattern02-factory-method-pattern-781df6f349c",
+    "important":"",
+    "tags":["Design"]
+  },
+  {
+    "title":".Net / SQLConnection 雜談",
+    "content":"Dapper 搭配 Respository / Unitofwork Pattern，可以實作出類似EF的架構，且又可以撰寫SQL語法進行與資料庫的互動，這種設計方式在.NET的世界中非常常見到，也算是一個很多專案上挑選Data Access Layer的起手式。",
+    "createAt":"2022/5/26",
+    "url":"https://medium.com/@ginoweng1024/net-sqlconnection-%E9%9B%9C%E8%AB%87-98f64639b6fc",
+    "important":"",
+    "tags":["SQLServer"]
+  },
+  {
     "title":"dotNet6 WebAPI",
     "content":"開發小型WebAPI專案, JWT驗證與資料的增刪修",
     "createAt":"2022/05/01",
@@ -20,86 +52,6 @@
     "content":"製作自己的履歷網頁, 較輕量的方式實作Compsition API",
     "createAt":"2022/6/15",
     "url":"https://github.com/Gino1024/GinoBlog",
-    "important":"",
-    "tags":["Vue","Javascript","Frontend"]
-  },
-  {
-    "title":"測試1",
-    "content":"測試1",
-    "createAt":"2022/6/15",
-    "url":"https://github.com/Gino1024/vue.demo",
-    "important":"",
-    "tags":["Vue","Javascript","Frontend"]
-  },
-  {
-    "title":"測試2",
-    "content":"測試2",
-    "createAt":"2022/6/15",
-    "url":"https://github.com/Gino1024/vue.demo",
-    "important":"",
-    "tags":["Vue","Javascript","Frontend"]
-  },
-  {
-    "title":"測試3",
-    "content":"測試3",
-    "createAt":"2022/6/15",
-    "url":"https://github.com/Gino1024/vue.demo",
-    "important":"",
-    "tags":["Vue","Javascript","Frontend"]
-  },
-  {
-    "title":"測試4",
-    "content":"測試4",
-    "createAt":"2022/6/15",
-    "url":"https://github.com/Gino1024/vue.demo",
-    "important":"",
-    "tags":["Vue","Javascript","Frontend"]
-  },
-  {
-    "title":"測試5",
-    "content":"測試5",
-    "createAt":"2022/6/15",
-    "url":"https://github.com/Gino1024/vue.demo",
-    "important":"",
-    "tags":["Vue","Javascript","Frontend"]
-  },
-  {
-    "title":"測試6",
-    "content":"測試6",
-    "createAt":"2022/6/15",
-    "url":"https://github.com/Gino1024/vue.demo",
-    "important":"",
-    "tags":["Vue","Javascript","Frontend"]
-  },
-  {
-    "title":"測試7",
-    "content":"測試7",
-    "createAt":"2022/6/15",
-    "url":"https://github.com/Gino1024/vue.demo",
-    "important":"",
-    "tags":["Vue","Javascript","Frontend"]
-  },
-  {
-    "title":"測試8",
-    "content":"測試8",
-    "createAt":"2022/6/15",
-    "url":"https://github.com/Gino1024/vue.demo",
-    "important":"",
-    "tags":["Vue","Javascript","Frontend"]
-  },
-  {
-    "title":"測試9",
-    "content":"測試9",
-    "createAt":"2022/6/15",
-    "url":"https://github.com/Gino1024/vue.demo",
-    "important":"",
-    "tags":["Vue","Javascript","Frontend"]
-  },
-  {
-    "title":"測試10",
-    "content":"測試10",
-    "createAt":"2022/6/15",
-    "url":"https://github.com/Gino1024/vue.demo",
     "important":"",
     "tags":["Vue","Javascript","Frontend"]
   }

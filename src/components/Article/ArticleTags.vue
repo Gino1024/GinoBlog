@@ -34,6 +34,18 @@ const selectList = ref([{
 {
   label: 'Network',
   isSeleted: false,
+},
+{
+  label: 'SQLServer',
+  isSeleted: false,
+},
+{
+  label: 'Design',
+  isSeleted: false,
+},
+{
+  label: 'TroubleShooting',
+  isSeleted: false,
 }]);
 
 const props = defineProps({

@@ -5,11 +5,11 @@
   <div class="row justify-center">
     <ArticleTags :isClear=isClear @Search='TagSearch'></ArticleTags>
   </div>
-  <div class="row justify-center">
-    <ListPagination :totalPage=totalPage @paging='Paging'></ListPagination>
-  </div>
   <div class="articleList q-mt-md bg-white">
     <ArticleList :articleData=articleData></ArticleList>
+  </div>
+  <div class="row justify-center">
+    <ListPagination :totalPage=totalPage @paging='Paging'></ListPagination>
   </div>
 </template>
 <script setup lang="ts">
