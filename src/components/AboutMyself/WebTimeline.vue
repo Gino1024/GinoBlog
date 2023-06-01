@@ -7,7 +7,7 @@
       </q-timeline-entry>
       <q-timeline-entry
         title="系統設計師"
-        subtitle="統一資訊 Sep , 2022"
+        subtitle="統一資訊(500人以上) Sep , 2022 在職中"
         icon="fa-solid fa-angle-up"
       >
       <div class='timeline-description'>
